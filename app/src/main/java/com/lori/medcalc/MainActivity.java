@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     TextView operationField;
     Double operand = null;
     String lastOperation = "=";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_plus).setOnClickListener((view)->onOperationClick("+"));
         findViewById(R.id.button_enter).setOnClickListener((view)->onOperationClick("="));
+        findViewById(R.id.button_delete).setOnClickListener((view) -> onDeleteClick());
 
         findViewById(R.id.button0).setOnClickListener((view)->onNumberClick("0"));
         findViewById(R.id.button1).setOnClickListener((view)->onNumberClick("1"));
@@ -40,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button9).setOnClickListener((view)->onNumberClick("9"));
         findViewById(R.id.comma).setOnClickListener((view)->onNumberClick(","));
     }
+
+    public void onDeleteClick(){
+        String number = numberField.getText().toString();
+        if(number.length() > 0){
+            number = number.substring(0, number.length() - 1);
+            numberField.setText(number);
+        }
+    }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putString("OPERATION", lastOperation);

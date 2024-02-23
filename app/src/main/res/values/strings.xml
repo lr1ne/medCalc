@@ -12,6 +12,7 @@
     <string name="button8" translatable="false">8</string>
     <string name="button9" translatable="false">9</string>
     <string name="button0" translatable="false">0</string>
+    <string name="delete">Del</string>
     <string name="enter">=</string>
     <string name="plus">+</string>
     <string name="comma">,</string>
