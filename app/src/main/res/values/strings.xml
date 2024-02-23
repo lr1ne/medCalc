@@ -1,0 +1,24 @@
+<resources>
+    <!--  Кнопки калькулятора  -->
+    <string name="app_name">Medical Calculator</string>
+    <string name="button1" translatable="false">1</string>
+    <string name="button2" translatable="false">2</string>
+    <string name="button3" translatable="false">3</string>
+    <string name="button4" translatable="false">4</string>
+    <string name="button5" translatable="false">5</string>
+    <string name="button6" translatable="false">6</string>
+    <string name="button7" translatable="false">7</string>
+    <string name="button8" translatable="false">8</string>
+    <string name="button9" translatable="false">9</string>
+    <string name="button0" translatable="false">0</string>
+    <string name="enter">=</string>
+    <string name="plus">+</string>
+    <string name="comma">,</string>
+    <!--  Текст с главной страницы -->
+    <string name="micro_app_name">MedCalc</string>
+    <string name="app_version">Nightly Build 1.0</string>
+
+    <string name="settings_name">Settings</string>
+
+
+</resources>

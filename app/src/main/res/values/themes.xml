@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Medcalc" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/status_bar</item>
+    </style>
+
+    <style name="Theme.Medcalc" parent="Base.Theme.Medcalc" />
+</resources>
