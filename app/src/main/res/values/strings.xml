@@ -1,4 +1,5 @@
 <resources>
+    <string name="creatorName">made by Lori</string>
     <!--  Кнопки калькулятора  -->
     <string name="app_name">Medical Calculator</string>
     <string name="button1" translatable="false">1</string>
@@ -17,8 +18,10 @@
     <!--  Текст с главной страницы -->
     <string name="micro_app_name">MedCalc</string>
     <string name="app_version">Nightly Build 1.0</string>
-
+    <!-- Текст с страницы настроек -->
     <string name="settings_name">Settings</string>
+    <string name="bmi_calc">Калькулятор индекса массы тела</string>
+    <string name="bmi_about">С помощью данного кулькулятора, можно узнать индекс массы тела. \nВсе что вам нужно, это ввести вес(КГ), нажать на плюс и ввести рост(М), после нажатия на равно, Вы получите результат.</string>
 
 
 </resources>

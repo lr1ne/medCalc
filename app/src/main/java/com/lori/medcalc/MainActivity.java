@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             outState.putDouble("OPERAND", operand);
         super.onSaveInstanceState(outState);
     }
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
@@ -56,14 +57,15 @@ public class MainActivity extends AppCompatActivity {
         resultField.setText(operand.toString());
         operationField.setText(lastOperation);
     }
+
     public void onNumberClick(String number){
         numberField.append(number);
         if(lastOperation.equals("=") && operand!=null){
             operand = null;
         }
     }
-    public void onOperationClick(String op){
 
+    public void onOperationClick(String op){
         String number = numberField.getText().toString();
         if(number.length()>0){
             number = number.replace(',', '.');
@@ -88,15 +90,20 @@ public class MainActivity extends AppCompatActivity {
             }
             switch(lastOperation){
                 case "=":
-                    operand =number;
+                    operand = number;
                     break;
                 case "+":
-                    operand +=number;
+                    operand = calculateBMI(operand, number);
+                    lastOperation = "=";
                     break;
             }
         }
         resultField.setText(operand.toString().replace('.', ','));
         numberField.setText("");
+    }
+
+    private double calculateBMI(Double weight, Double heightInCm) {
+        return weight / (heightInCm * heightInCm);
     }
 
     public void startSettingsActivity(View view) {

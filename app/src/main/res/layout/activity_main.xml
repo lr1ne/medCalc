@@ -205,7 +205,7 @@
         android:layout_marginBottom="226dp"
         android:backgroundTint="#051DA1"
         android:onClick="startSettingsActivity"
-        android:text="@string/settings_button"
+        android:text="@string/settings_name"
         android:textSize="20sp"
         app:icon="@android:drawable/ic_menu_preferences"
         app:layout_constraintBottom_toTopOf="@+id/button3"
