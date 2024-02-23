@@ -103,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private double calculateBMI(Double weight, Double heightInCm) {
-        return weight / (heightInCm * heightInCm);
+        double answer = Math.floor(weight / (heightInCm * heightInCm));
+        return answer;
     }
 
     public void startSettingsActivity(View view) {
